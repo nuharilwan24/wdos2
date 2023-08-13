@@ -1,0 +1,163 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Header styles */
+  .bg-img {
+    background-image: url(images/tp1.jpg);
+    background-size: cover;
+    height: 700px;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .logo img {
+    width: 768px;
+    height: 110px;
+  }
+  
+  .topnav {
+    overflow: hidden;
+  }
+  
+  .topnav a {
+    color: white;
+    display: inline-block;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #4CAF50;
+  }
+/*form*/
+  .iti {
+    position: relative;
+    display: inline-block;
+}
+
+input[type=tel] {
+    padding-right: 6px;
+    padding-left: 52px;
+    margin-left: 0;
+    width: 330px;
+    height: 56px;
+    border: 1px solid #ccc;
+}
+input[type=text]{
+    padding-right: 6px;
+    padding-left: 52px;
+    margin-left: 0;
+    width: 330px;
+    height: 56px;
+    border: 1px solid #ccc;
+}
+input,
+select{
+    padding-right: 6px;
+    padding-left: 52px;
+    margin-left: 0;
+    width: 330px;
+    height: 56px;
+    border: 1px solid #ccc;
+}
+button#submit{
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 40%;
+  }
+  button#submit:hover {
+    background-color: #45a049;
+  }
+button#toPayments{
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+button#toPayments:hover {
+    background-color: #45a049;
+}
+.toPayments{
+    display: flex;
+    justify-content: center;
+}
+#details{
+    width: 50%;
+    border: 2px solid #adf7b6;
+    border-radius: 5px;
+    margin-top: 2%;
+    margin-left: 25%;
+}
+table{
+    border-collapse: collapse;
+    padding: 5;
+}
+fieldset {
+    width: 50%;
+    border: 2px solid #adf7b6;
+    border-radius: 5px;
+    margin-top: 2%;
+    margin-left: 25%;
+  }
+  
+  legend {
+    font-size: 20px;
+    font-weight: bold;
+  }
+/* Styles for the summary table container */
+.table-container {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+
+/* Styles for the table */
+#userDataTable {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+}
+
+/* Styles for table header */
+#userDataTable thead {
+  background-color: #f2f2f2;
+}
+
+/* Styles for table header cells */
+#userDataTable th {
+  padding: 10px;
+  text-align: left;
+}
+
+/* Styles for table data cells */
+#userDataTable td {
+  padding: 10px;
+  border-top: 1px solid #ccc;
+}

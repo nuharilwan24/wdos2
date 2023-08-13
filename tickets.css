@@ -1,0 +1,380 @@
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styles */
+.bg-img {
+  background-image: url(images/tp1.jpg);
+  background-size: cover;
+  height: 700px;
+  text-align: center;
+  padding: 20px;
+}
+
+.logo img {
+  width: 768px;
+  height: 110px;
+}
+
+.topnav {
+  overflow: hidden;
+}
+
+.topnav a {
+  color: white;
+  display: inline-block;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+}
+
+/* Container styles */
+.table-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid #218b82;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+/* Heading styles */
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Price row styles */
+.price-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pice-col {
+  flex: 1;
+  padding: 10px;
+}
+
+/* List styles */
+ul {
+  list-style: none;
+  margin: 10px 0;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+/* Guests styles */
+.guests {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid #218b82;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.label {
+  flex: 1;
+}
+
+.input-field {
+  width: 40px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+.Btn {
+  width: 3vw;
+  height: 3vw;
+  background-color: #218b82;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 1.5vw;
+}
+
+/* Time container styles */
+.time-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid #218b82;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+.select-btn {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.arrow-btn {
+  margin-left: auto;
+}
+
+.timeselection {
+  list-style: none;
+  padding: 0;
+}
+
+.slots {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.checkmark {
+  display: none;
+  margin-right: 5px;
+}
+
+/* Summary table styles */
+.sum-tab {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid #218b82;
+  margin: 20px auto;
+  max-width: 800px;
+}
+.calDiv{
+  display: flex;
+  justify-content: center;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+thead {
+  background-color: #f1f1f1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .table-container, .guests, .time-container, .sum-tab {
+      padding: 10px;
+  }
+
+  .input-field {
+      width: 30px;
+  }
+}
+/*calendar*/
+:root {
+  --primary-color: #447241;
+  --text-color: #1d1d1d;
+  --bg-color: #f1f1fb;
+}
+
+.containerCalendar {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#calendar {
+  width: 100%;
+  max-width: 600px;
+  background: var(--bg-color);
+  padding: 30px 20px;
+  border-radius: 10px;
+  background-color: #c9dfc8;
+}
+#calendar .headers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #ccc;
+}
+#calendar .headers .month {
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  font-weight: 600;
+  color: var(--text-color);
+}
+#calendar .headers .btns {
+  display: flex;
+  gap: 10px;
+}
+#calendar .headers .btns .btn {
+  width: 50px;
+  height: 40px;
+  background: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+#calendar .headers .btns .btn:hover {
+  background: #fbfde1;
+  transform: scale(1.05);
+}
+#calendar .weekdays {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+#calendar .weekdays .day {
+  width: calc(100% / 7 - 10px);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+}
+#calendar .days {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+#calendar .days .day {
+  width: calc(100% / 7 - 10px);
+  height: 50px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--text-color);
+  transition: all 0.3s;
+  user-select: none;
+}
+#calendar .days .day:not(.next):not(.prev):hover {
+  color: #fff;
+  background: var(--primary-color);
+  transform: scale(1.05);
+}
+#calendar .days .day.next,
+#calendar .days .day.prev {
+  color: #ccc;
+}
+#calendar .days .day.today {
+  color: #fff;
+  background: var(--primary-color);
+}
+
+#calendar .day.disabled {
+  pointer-events: none;
+  color: #ccc;
+  opacity: 0.5;
+}
+
+#calendar .day.selected {
+  background-color: #c9dfc8;
+  color: #fff;
+}
+.duration, 
+.normal,
+.peak li{
+  text-decoration: none;
+
+}
+.guests {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.box {
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.Btn {
+  cursor: pointer;
+  display: inline-block;
+  background-color: #218b82;
+  border-radius: px;
+  margin: 0 5px;
+}
+
+.input-field {
+  width: 70px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+/* Adjusting styles for responsiveness */
+@media (max-width: 600px) {
+  .center-container {
+      padding: 10px;
+  }
+
+  .input-field {
+      width: 30px;
+  }
+}
+button#toDetails{
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+button#toDetails:hover {
+  background-color: #45a049;
+}
+.toDetails{
+  display: flex;
+  justify-content: center;
+}

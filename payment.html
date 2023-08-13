@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Payments</title>
+    <link rel="stylesheet" href="payment.css">
+    <script defer src="Scripts/payment.js"></script>
+  </head>
+  <body>
+    <div class="bg-img">
+      <br>
+        <div class="logo">
+        <img id="img6" src="images/turtlelogo.PNG" alt="logo">
+        <div class="container">
+            <div class="topnav">
+                <a href="index.html">HOME</a>
+                <a href="tickets.html">TICKETS</a>
+                <a href="details.html">DETAILS</a>
+                <a href="payment.html">PAYMENT</a>
+                <a href="confirmation.html">CONFIRMATION</a>
+            </div>
+        </div>
+        </div>
+    </div>
+    <fieldset id="details">
+      <legend>Details</legend>
+      <form>
+      <div class="details">
+          <div class="iti">
+              <label for="cname">NAME ON CARD</label><br>
+              <input type="text" id="cname" name="cname" placeholder="Name on Card" required>
+          </div>
+          <br><br>
+          <div class="iti">
+              <label for="ccnum">CREDIT CARD NUMBER</label><br>
+              <input type="text" id="ccnum" name="ccnum" placeholder="Card Number" required>
+          </div>
+          <br><br>
+          <div class="iti">
+              <label for="expdate">EXPIRY DATE</label><br>
+              <input type="text" id="expdate" name="expdate" placeholder="Expiry Date" required><br><br>
+              <label for="cvv">CVV</label><br>
+              <input type="text" id="cvv" name="cvv" placeholder="CVV" required>
+          </div>
+          <br><br>
+          <div class="submit">
+            <button type="button" id="submit" onclick="submitButton()">Submit</button>
+          </div>
+        </form>
+    </fieldset>
+    <fieldset>
+      <legend>Summary</legend>
+      <table border="1" id="userDataTable">
+          <thead>
+            <tr>
+              <th>Full Name</th>
+              <th>Mobile Phone</th>
+              <th>Email</th>
+              <th>Gender</th>
+            </tr>
+          </thead>
+          <tbody id="userDataBody">
+            <!-- User data rows will be inserted here -->
+          </tbody>
+        </table>
+  </fieldset>
+  <br><br>
+  <div class="confirm">
+    <button type="button" id="confirmorder" onclick="confirmation()">Confirm Order</button>
+  </div>
+  </body>
+</html>

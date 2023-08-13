@@ -1,0 +1,158 @@
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f5fbff;
+}
+html{
+    scroll-behavior: smooth;
+}
+h1{
+    text-align: center;
+    font-size: 2vw;
+}
+h2{
+    text-align: left;
+    font-size: 1.5vw;
+    padding-left: 7%;
+}
+table{
+    border-collapse: collapse; 
+}
+#heading1{
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.bg-img {
+  background-image: url("images/tc1.jpg");
+  min-width: 500px;
+  min-height:710px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-left: 1%;
+  padding-top: 0.5%;
+}
+  .container {
+    position: absolute;
+    margin: 1.3vw;
+    width: auto;
+}
+  .topnav {
+    overflow: hidden;
+    background-color: #c0e6f0;
+}
+  .topnav a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.1vw;
+}
+  
+  .topnav a:hover {
+    background-color: #8acbde;
+    color: black;
+}
+table{
+    text-align: center;
+}
+table a{
+    text-decoration: none;
+}
+#img1, #img2, #img3{
+  height: 20vw;
+  width:  26vw;
+}
+#img4{
+  width: 50vw;
+  height: 7.2vw;
+}
+th{
+  font-size: 1.5vw;
+}
+footer{
+  background-color: #e5f3fd;
+}
+.row{
+  padding: 1em 10em;
+}
+.row.primary{
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr;
+}
+.column{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 2em;
+  min-height: 15em;
+}
+h4 {
+  width: 100%;
+  text-align: left;
+  color: rgb(0, 0, 0);
+  font-size: 1.4em;
+  white-space: nowrap;
+  padding-bottom: 5%;
+}
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+li:not(:first-child) {
+  margin-top: 0.8em;
+}
+ul li a {
+  color: #000000;
+  text-decoration: none;
+}
+ul li a:hover {
+  color: #c7940a;
+}
+.copyright p {
+  font-size: 1vw;
+  text-align: right;
+  padding: 2em 2em;
+  background-color: #d1e5f4;
+}
+.rekawa-beach, .kosgoda, .pigeon-island{
+  text-align: center;
+}
+iframe{
+  width: 22vw;
+  height: 22vw;
+}
+.logo{
+  width: 50vw;
+  height: 7.3vw;
+}
+p{
+  font-size: 1.2vw;
+  padding-left: 7%;
+  padding-right: 7%;
+}
+table, th, td{
+  border:  0.01vw solid white;
+  background-color: #d0efff;
+}
+th{
+  color: white;
+  background-color: #64bafc;
+}
+table tr td:hover{
+  background-color: #e5f3fd;
+}
+table tr p{
+  font-size: 1.11vw;
+  padding-left: 5%;
+  padding-right: 5%;
+}

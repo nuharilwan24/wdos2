@@ -1,0 +1,136 @@
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+.bg-img {
+  background-image: url("images/pd1.jpg");
+  min-width: 500px;
+  min-height: 710px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-left: 1%;
+  padding-top: 0.5%;
+}
+.container {
+  position: absolute;
+  margin: 20px;
+  width: auto;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #c0e6f0;
+}
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover {
+  background-color: #8acbde;
+  color: black;
+}
+.flex-container{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #ffffff;
+  justify-content: center;
+  text-align: center;
+}
+.flex-container > div{
+  padding-left: 0.1%;
+}
+h1{
+  text-align: center;
+}
+h2{
+  padding-left: 5.5%;
+}
+.shop{
+  text-align: center;
+}
+#para1{
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.links a{
+  color: #000000;
+  background-color: #9ccbb8;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1.063rem;
+  justify-content: center;
+}
+.links a:hover{
+    background-color: #c0dfd3;
+    color: black;
+}
+.links{
+  display: flex;
+  justify-content: center;
+}
+.flex-container div a{
+  text-decoration: none;
+  color: black;
+}
+
+table{
+  text-align: center;
+}
+footer{
+  background-color: #e5f3fd;
+}
+.row{
+  padding: 1em 10em;
+}
+.row.primary{
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr;
+}
+.column{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 2em;
+  min-height: 15em;
+}
+h4 {
+  width: 100%;
+  text-align: left;
+  color: rgb(0, 0, 0);
+  font-size: 1.4em;
+  white-space: nowrap;
+}
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+li:not(:first-child) {
+  margin-top: 0.8em;
+}
+ul li a {
+  color: #000000;
+  text-decoration: none;
+}
+ul li a:hover {
+  color: #c7940a;
+}
+.copyright p {
+  font-size: 1vw;
+  text-align: right;
+  padding: 2em 2em;
+  background-color: #d1e5f4;
+}

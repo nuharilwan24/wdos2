@@ -1,0 +1,150 @@
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+  background-color: #f5fbff;
+}
+.bg-img {
+    background-image: url("images/ttt4.jpg");
+    min-width: 500px;
+    min-height: 710px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-left: 1%;
+    padding-top: 0.5%;
+}
+  .container {
+    position: absolute;
+    margin: 20px;
+    width: auto;
+}
+  .topnav {
+    overflow: hidden;
+    background-color: #c0e6f0;
+}
+  .topnav a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.11vw;
+}
+  .topnav a:hover {
+    background-color: #8acbde;
+    color: black;
+}
+h1{
+    text-align: center;
+}
+h2{
+    text-align: center;
+}
+p{
+    padding-left: 20%;
+    padding-right: 20%;
+    font-size: 1.11vw;
+}
+#first, #second, #third{
+  padding-left: 1%;
+}
+.link a{
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.1vw;
+    background-color: #8bca84;
+    color: black;
+}
+.link a:hover{
+  background-color: #cce7c9;
+}
+.fisheriesbycatch > div{
+  display: flex;
+}
+#img1{
+  width: 50vw;
+  height: 7vw;
+}
+#img2, #img3, #img4{
+  padding-left: 5%;
+  width: 40vw;
+  height: 27vw;
+}
+footer{
+  background-color: #e5f3fd;
+}
+.row{
+  padding: 1em 10em;
+}
+.row.primary{
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr;
+}
+.column{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 2em;
+  min-height: 15em;
+}
+h4 {
+  width: 100%;
+  text-align: left;
+  color: rgb(0, 0, 0);
+  font-size: 1.4em;
+  white-space: nowrap;
+}
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+}
+li:not(:first-child) {
+  margin-top: 0.8em;
+}
+ul li a {
+  color: #000000;
+  text-decoration: none;
+}
+ul li a:hover {
+  color: #c7940a;
+}
+.copyright p {
+  font-size: 0.9em;
+  text-align: right;
+  padding: 2em 2em;
+  background-color: #d1e5f4;
+}
+table a{
+  text-decoration: none;
+  padding: 16px 16px;
+  background-color: rgb(237, 237, 255);
+  color: #000000;
+}
+table a:hover{
+  background-color: #e5f3fd;
+}
+.threats a{
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.11vw;
+}
+.threats a:hover{
+  background-color: #82c888;
+}
+.threats{
+  display: flex;
+  justify-content: center;
+}

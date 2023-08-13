@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="details.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <script defer src="Scripts/details.js"></script>
+    <script defer src="Scripts/tickets.js"></script>
+    <title>Details</title>
+
+</head>
+<body>
+    <div class="bg-img">
+        <br>
+          <div class="logo">
+          <img id="img6" src="images/turtlelogo.PNG" alt="logo">
+          <div class="container">
+              <div class="topnav">
+                  <a href="index.html">HOME</a>
+                  <a href="tickets.html">TICKETS</a>
+                  <a href="details.html">DETAILS</a>
+                  <a href="payment.html">PAYMENT</a>
+                  <a href="confirmation.html">CONFIRMATION</a>
+              </div>
+          </div>
+          </div>
+      </div>
+    <form>
+        <div class="fieldset-container">
+            <fieldset id="details">
+                <legend>Details</legend>
+                <div class="details">
+                    <div class="iti">
+                        <label for="fname">FULL NAME</label><br>
+                        <input type="text" id="fname" name="fName" placeholder="John/Jane doe" required>
+                    </div>
+                    <br><br>
+                    <div class="iti">
+                        <label for="phone">MOBILE PHONE</label><br>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <br><br>
+                    <div class="iti">
+                        <label>EMAIL</label><br>
+                        <input type="text" id="email" name="email" placeholder="example@gmail.com" required><br><br>
+    
+                        <label for="confirmEmail">CONFIRM EMAIL</label><br>
+                        <input type="text" id="confirmEmail" name="confirmEmail" placeholder="example@gmail.com" required>
+                    </div>
+                    <br><br>
+                    <div class="iti">
+                        <label for="gender">GENDER</label><br>
+                        <select name="gender" id="gender" required>
+                            <option value="">select</option>
+                            <option class="gender" value="male">Male</option>
+                            <option class="gender" value="female">Female</option>
+                        </select>
+                    </div>
+                    <br>
+                    <br>
+                    <button type="button" id="submit" onclick="submitButton()">Submit</button>
+            </div>
+            </fieldset>
+        </div>
+    </form>
+        <fieldset>
+            <legend>Summary</legend>
+            <table class="T3">
+                <thead>
+
+                </thead>
+                <tbody id="tbody1">
+
+                </tbody>
+                <tbody>
+
+                </tbody>
+            </table>
+            <table id="userDataTable">
+                <thead>
+                  <tr>
+                    <th>Full Name</th>
+                    <th>Mobile Phone</th>
+                    <th>Email</th>
+                    <th>Gender</th>
+                  </tr>
+                </thead>
+                <tbody id="userDataBody">
+                  <!-- User data rows will be inserted here -->
+                </tbody>
+              </table>
+        </fieldset>
+        <br>
+        <div class="toPayments">
+            <button type="button" id="toPayments" onclick="toPurchase()">Continue with purchase</button>
+        </div>
+        <br>  
+        <br>   
+</body>
+</html>

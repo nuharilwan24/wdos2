@@ -1,0 +1,46 @@
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #c0dfd3;
+}
+html{
+  scroll-behavior: smooth;
+}
+h1{
+    padding-left: 5%;
+}
+form{
+    padding-left: 5%;
+}
+button {
+    width: 100px;
+    height: 60px;
+    border-radius: 45px;
+    transition: all 0.3s;
+    cursor: pointer;
+    background: white;
+    font-size: 1.1067708333333333vw;
+    font-weight: 550;
+  }
+  button:hover {
+    background: black;
+    color: white;
+  }
+  .input {
+    background-color: #ffffff;
+    max-width: 190px;
+    height: 40px;
+    padding: 10px;
+    text-align: center;
+    border: white;
+    border-radius: 5px;
+    box-shadow: 3px 3px 2px rgb(0, 0, 0);
+  }
+  table{
+    text-align: left;
+  }
+  td{
+    padding: 10px;
+  }

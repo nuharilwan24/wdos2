@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Tickets</title>
+    <link rel="stylesheet" href="tickets.css">
+    <script defer src="Scripts/tickets.js"></script>
+    <script defer src="Scripts/calendar.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+    <body id="ticketbooking">
+        <div class="bg-img">
+            <div class="logo">
+            <img id="img6" src="images/turtlelogo.PNG" alt="logo">
+            <div class="container">
+                <div class="topnav">
+                    <a href="index.html">HOME</a>
+                    <a href="tickets.html">TICKETS</a>
+                    <a href="details.html">DETAILS</a>
+                    <a href="payment.html">PAYMENT</a>
+                    <a href="confirmation.html">CONFIRMATION</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="table-container">
+        <h3><i>Dates</i></h3>
+        <div class="calDiv">
+            <div id="calendar" >
+                <div class="headers">
+                    <div class="month"></div>
+                    <div class="btns">
+                        <div class="btn today-btn">
+                            <i class="fas fa-calendar-day"></i>
+                        </div>
+                        <div class="btn prev-btn">
+                            <i class="fas fa-chevron-left"></i>
+                        </div>
+                        <div class="btn next-btn">
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="weekdays">
+                    <div class="day">Sun</div>
+                    <div class="day">Mon</div>
+                    <div class="day">Tue</div>
+                    <div class="day">Wed</div>
+                    <div class="day">Thu</div>
+                    <div class="day">Fri</div>
+                    <div class="day">Sat</div>
+                </div>
+                <div class="days">
+    
+                </div>
+                <div class="selected-date-display">
+                    <p id="selectedDateDisplay"></p>
+                </div>
+            </div>
+        </div>
+        <div class="price-row">
+            <div class="pice-col">
+                <div class="durationdiv">
+                    <h3 id="timeSlots"><i>Time Slots</i></h3>
+                    <ul class="duration">
+                        <li>7:00am - 8:00am Normal hour</li>
+                        <li>9:00am - 10:00am Normal hour</li>
+                        <li>10:00am - 11:00am Peak hour</li>
+                        <li>11:00am - 12:00am Peak hour</li>
+                        <li>12:00am - 1:00am Peak hour</li>
+                        <li>1:00am - 2:00am Normal hour</li>
+                        <li>2:00am - 3:00am Normal hour</li>
+                        <li>3:00am - 4:00am Peak hour</li>
+                        <li>4:00am - 5:00am Peak hour</li>
+                        <li>5:00am - 6:00am Peak hourr</li>
+                        <li>6:00am - 7:00am Normal hour</li>
+                    </ul>
+                    <h3><i>Normal hours</i></h3>
+                    <ul class="normal">
+                        <li>Foreigner Adult - $10</li>
+                        <li>Foreigner Child - $5</li>
+                        <li>SL Adult - $4</li>
+                        <li>SL Child - $2</li>
+                    </ul>
+                    <h3><i>Peak hours</i></h3>
+                    <ul class="peak">
+                        <li>Foreigner Adult - $13</li>
+                        <li>Foreigner Child - $8</li>
+                        <li>SL Adult - $6</li>
+                        <li>SL Child - $3</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="guests">
+            <h1>Guests</h1>
+            <div class="box">
+                <h3>SL Adult</h3>
+                <div class="d Btn">-</div>
+                <input type="text" name="guests" id="slAdult" value="0" class="input-field" >
+                <div class="i Btn">+</div>
+            </div>
+            <div class="box">
+                <h3>SL Child</h3>
+                <div class="d Btn">-</div>
+                <input type="text" name="guests" id="slChild" value="0" class="input-field" >
+                <div class="i Btn">+</div>
+            </div>
+            <div class="box">
+                <h3>Foreigner Adult</h3>
+                <div class="d Btn">-</div>
+                <input type="text" name="guests" id="fAdult" value="0" class="input-field">
+                <div class="i Btn">+</div>
+            </div>
+            <div class="box">
+                <h3>Foreigner Child</h3>
+                <div class="d Btn">-</div>
+                <input type="text" name="guests" id="fChild" value="0" class="input-field">
+                <div class="i Btn">+</div>
+            </div>
+            <div class="box">
+                <h3>Infant</h3>
+                <div class="d Btn">-</div>
+                <input type="text" name="guests" id="inf" value="0" class="input-field">
+                <div class="i Btn">+</div>
+            </div>
+        </div>
+        <div class="time-container">
+            <div class="select-btn">
+                <span class="btn-text">Select Time Slot by clicking on it</span>
+                <span class="arrow-btn">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </span>
+            </div>
+             <ul class="timeselection">
+                <li class="slots">
+                    <span class="check">
+                        <i class="fa-solid fa-check checkmark"></i>
+                    </span>
+                    <span class="slots-text" value="1">7.00 AM - 8.00 A.M</span>
+                </li>
+
+                <li class="slots">
+                    <span class="check">
+                        <i class="fa-solid fa-check checkmark"></i>
+                    </span>
+                    <span class="slots-text" value="2">8.00 AM - 9.00 A.M</span>
+                </li>
+
+                <li class="slots">
+                    <span class="check">
+                        <i class="fa-solid fa-check checkmark"></i>
+                    </span>
+                    <span class="slots-text" value="3">9.00 AM - 10.00 A.M</span>
+                </li>
+
+                <li class="slots">
+                    <span class="check">
+                        <i class="fa-solid fa-check checkmark"></i>
+                    </span>
+                    <span class="slots-text" value="4">10.00 AM - 11.00 A.M</span>
+                </li>
+
+                <li class="slots">
+                    <span class="check">
+                        <i class="fa-solid fa-check checkmark"></i>
+                    </span>
+                    <span class="slots-text" value="5">11.00 AM - 12.00 P.M</span>
+                </li>
+
+                <li class="slots">
+                    <span class="check">
+                        <i class="fa-solid fa-check checkmark"></i>
+                    </span>
+                    <span class="slots-text" value="6">12.00 PM - 1.00 P.M</span>
+                </li>
+
+                <li class="slots">
+                    <span class="check">
+                        <i class="fa-solid fa-check checkmark"></i>
+                    </span>
+                    <span class="slots-text" value="7">1.00 PM - 2.00 P.M</span>
+                </li>
+
+                <li class="slots">
+                    <span class="check">
+                        <i class="fa-solid fa-check checkmark"></i>
+                    </span>
+                    <span class="slots-text" value="8">2.00 PM - 3.00 P.M</span>
+                </li>
+
+                <li class="slots">
+                    <span class="check">
+                        <i class="fa-solid fa-check checkmark"></i>
+                    </span>
+                    <span class="slots-text" value="9">3.00 PM - 4.00 P.M</span>
+                </li>
+
+                <li class="slots">
+                    <span class="check">
+                        <i class="fa-solid fa-check checkmark"></i>
+                    </span>
+                    <span class="slots-text" value="10">4.00 PM - 5.00 P.M</span>
+                </li>
+
+                <li class="slots">
+                    <span class="check">
+                        <i class="fa-solid fa-check checkmark"></i>
+                    </span>
+                    <span class="slots-text" value="11">5.00 PM - 6.00 P.M</span>
+                </li>
+             </ul>
+            </div>
+        </div>
+        <div class="sum-tab">
+            <table class="T3">
+                <thead>
+
+                </thead>
+                <tbody id="tbody1">
+
+                </tbody>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+        <div class="toDetails">
+            <button type="button" id="toDetails" onclick="toDetails()">Continue with purchase</button>
+        </div>
+        <br><br>
+    </body>
+</html>
